@@ -56,3 +56,10 @@ UUID=<UUID> /mnt/sdb ext4 defautls,usrquota 0 2
 quotaon /mnt/sdb
 edquota <nom_utilisateur>
 ```
+
+5. Tâche 5
+
+- Modifier fstab
+```
+UUID=<UUID> /mnt/sdb ext4 defaults,uid=1000,gid=1500 0 2
+```
