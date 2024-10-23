@@ -35,3 +35,24 @@ UUID=<UUID> /mnt/sdb ext4 ro 0 2
 ```
 tmpfs /mnt/tmp tmpfs defaults,size=1G 0 0
 ```
+
+
+4. Tâche 4
+
+- Installer quota
+
+```bash
+apt install quota
+```
+
+- Montage dans fstab avec usrquota
+
+```
+UUID=<UUID> /mnt/sdb ext4 defautls,usrquota 0 2
+```
+
+- Activer les quota sur un point de montage
+```bash
+quotaon /mnt/sdb
+edquota <nom_utilisateur>
+```
