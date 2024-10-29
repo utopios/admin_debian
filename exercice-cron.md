@@ -7,6 +7,9 @@
 
 1.	Créer une Tâche Ponctuelle
 - Planifiez un message qui s’affichera dans le terminal dans 2 minutes.
+```
+echo "Bonjour" >> /home/ihab/at.txt | at now + 2 minutes
+```
 2.	Planifier un Nettoyage Quotidien avec cron
 - Utilisez cron pour planifier une tâche quotidienne qui supprime tous les fichiers dans un répertoire temporaire (/tmp/mytemp) à 2h du matin.
 3.	Créer un Rappel Hebdomadaire avec cron
