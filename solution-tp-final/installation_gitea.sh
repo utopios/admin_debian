@@ -5,4 +5,5 @@ sudo adduser --system --shell /bin/bash --gecos 'Git Version Control' --group --
 sudo mkdir -p /var/lib/gitea/{custom,data,log}
 sudo chown -R git:git /var/lib/gitea/
 sudo chmod -R 750 /var/lib/gitea/
-sudo nano /etc/systemd/system/gitea.service
+#sudo nano /etc/systemd/system/gitea.service
+sudo systemctl daemon-reload
