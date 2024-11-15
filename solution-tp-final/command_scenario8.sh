@@ -21,7 +21,7 @@ sudo mkdir -p "$BACKUP_DIR"
 
 # Sauvegarder le fichier de base de données SQLite
 echo "Sauvegarde de la base de données..."
-sudo tar -czf "$BACKUP_FILE" /var/lib/gitea/gitea.db
+sudo tar -czf "$BACKUP_FILE" /var/lib/gitea/data/gitea.db
 
 # Redémarrer le service Gitea
 echo "Redémarrage du service Gitea..."

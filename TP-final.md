@@ -32,7 +32,7 @@ Installer et configurer un serveur Debian pour l'équipe de développement, comp
    - **Gestion des Utilisateurs et Groupes :**
      - Créez un groupe `developpeurs`.
      - Créez les utilisateurs suivants et ajoutez-les au groupe `developpeurs` :
-       - `alice`, `bob`, `charlie`.
+       - `alice`, `bob`.
      - Configurez les environnements des utilisateurs pour qu'ils utilisent `bash` comme shell par défaut.
 
    - **Installation des Outils de Développement :**

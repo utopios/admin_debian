@@ -40,7 +40,7 @@ sudo iptables -t nat -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
 
 # b. Limitation du nombre de connexions SSH simultanées
 # Supposons que le port SSH est 22
-sudo iptables -A INPUT -p tcp --syn --dport 22 -m connlimit --connlimit-above 3 -j REJECT
+sudo iptables -A INPUT -p tcp --syn --dport 2222 -m connlimit --connlimit-above 3 -j REJECT
 
 # Sauvegarder les règles iptables pour qu'elles persistent après un redémarrage
 sudo apt install -y iptables-persistent
