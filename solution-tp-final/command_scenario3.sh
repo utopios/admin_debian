@@ -1,3 +1,4 @@
+sudo chmod +x /usr/local/bin/backup_gitea.sh
 sudo chmod +x /usr/local/bin/cleanup_backups.sh
 sudo crontab -e
 0 1 * * * /usr/local/bin/backup_gitea.sh
