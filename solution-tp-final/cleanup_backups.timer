@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer pour le nettoyage hebdomadaire des sauvegardes de Gitea
+
+[Timer]
+OnCalendar=Sun *-*-* 02:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

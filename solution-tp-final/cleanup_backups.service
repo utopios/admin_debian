@@ -1,0 +1,6 @@
+[Unit]
+Description=Nettoyage des anciennes sauvegardes de Gitea
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/cleanup_backups.sh
